@@ -1,4 +1,4 @@
-// Place your key bindings in this file to override the defaultsauto[]
+// 将键绑定放在此文件中以覆盖默认值auto[]
 [
     {
         "key": "ctrl+shift+a",
@@ -11,8 +11,8 @@
     },
     {
         "key": "alt+o",
-        "command": "clangd.switchheadersource",
-        "when": "editorTextFocus"
+        "command": "C_Cpp.SwitchHeaderSource",
+        "when": "editorTextFocus && editorLangId =~ /^(c|(cuda-)?cpp)$/ && !(config.C_Cpp.intelliSenseEngine =~ /^[dD]isabled$/)"
     },
     {
         "key": "ctrl+shift+down",
@@ -44,7 +44,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "shift+f12",
+        "key": "ctrl+i",
         "command": "editor.action.goToImplementation",
         "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
     },
