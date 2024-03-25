@@ -20,6 +20,7 @@
 
 ## 编辑操作
 + ctrl + Backspace 删除上一个单词
++ shift + alt + down 向下复制当前行
 
 ## 打开或者关闭操作
 ctrl + r 重新加载窗口
